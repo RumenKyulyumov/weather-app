@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-APP</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="functionality.js"></script>
   </head>
   <body>
-    <h1>Weather-APP</h1>
+    <div class="main-window">
+      <div class="search-box">
+        <input type="text" class="search-bar" />
+        <button>Search</button>
+        </button>
+      </div>
+      <div class="weather">
+        <h2 class="city">Weather in Sofia</h2>
+        <div class="temp">31°C</div>
+        <img src="" alt="" class="icon">
+        <div class="weather-description">Sunny</div>
+        <div class="humidity">45%</div>
+        <div class="wind">Wind speed: 1.4 km/h</div>
+      </div>
+    </div>
   </body>
 </html>
