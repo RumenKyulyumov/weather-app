@@ -1,19 +1,27 @@
 body {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background: black;
-  margin: 0;
+  margin: 5px;
   font-family: "Open Sans", sans-serif;
+  font-size: 120%;
+  background-image: url("./weather-pic.jpg");
+  background-position: center center;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 }
 
 .main-window {
-  background: white;
+  background: #000000d0;
+  color: white;
   border-radius: 35px;
-  width: 100%;
+  /* width: 30%; */
   padding: 1.5em;
-  max-width: 460px;
+  max-width: 350px;
+  text-align: center;
 }
 
 .search-box {
@@ -32,9 +40,27 @@ button {
 button:hover {
   background: silver;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 input.search-bar {
   border-radius: 30px;
-  padding: 0.1em;
+  padding: 0.5em 1em;
+  width: 100%;
+  color: white;
+  background: #8c8b8b;
+  border: none;
+  font-family: inherit;
+}
+
+h1.temp {
+  margin: 0;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  color: white;
 }
